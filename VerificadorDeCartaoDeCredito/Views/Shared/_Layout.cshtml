@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    @RenderSection("Style", false)
+
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.mask.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    @RenderSection("Scripts", false)
+</body>
+</html>
